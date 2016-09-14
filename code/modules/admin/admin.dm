@@ -1442,7 +1442,7 @@ datum/admins/var/obj/item/weapon/paper/admin/faxreply // var to hold fax replies
 
 		if(!P.stamped)
 			P.stamped = new
-		P.stamped += /obj/item/weapon/stamp/centcomm
+		P.stamped += /obj/item/weapon/stamp/CentCom
 		P.overlays += stampoverlay
 
 	var/obj/item/rcvdcopy

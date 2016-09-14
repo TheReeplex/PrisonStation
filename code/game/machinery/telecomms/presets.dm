@@ -25,7 +25,7 @@
 	autolinkers = list("r_relay")
 
 /obj/machinery/telecomms/relay/preset/centcom
-	id = "Centcom Relay"
+	id = "CentCom Relay"
 	hide = 1
 	toggled = 1
 	//anchored = 1
@@ -44,11 +44,11 @@
 	"receiverA", "broadcasterA")
 
 /obj/machinery/telecomms/hub/preset_cent
-	id = "CentComm Hub"
+	id = "CentCom Hub"
 	network = "tcommsat"
 	produces_heat = 0
 	autolinkers = list("hub_cent", "c_relay", "s_relay", "m_relay", "r_relay",
-	 "centcomm", "receiverCent", "broadcasterCent")
+	 "CentCom", "receiverCent", "broadcasterCent")
 
 //Receivers
 
@@ -65,7 +65,7 @@
 		..()
 
 /obj/machinery/telecomms/receiver/preset_cent
-	id = "CentComm Receiver"
+	id = "CentCom Receiver"
 	network = "tcommsat"
 	produces_heat = 0
 	autolinkers = list("receiverCent")
@@ -106,11 +106,11 @@
 	autolinkers = list("processor4", "engineering", "common")
 
 /obj/machinery/telecomms/bus/preset_cent
-	id = "CentComm Bus"
+	id = "CentCom Bus"
 	network = "tcommsat"
 	freq_listening = list(ERT_FREQ, DTH_FREQ)
 	produces_heat = 0
-	autolinkers = list("processorCent", "centcomm")
+	autolinkers = list("processorCent", "CentCom")
 
 //Processors
 
@@ -135,7 +135,7 @@
 	autolinkers = list("processor4")
 
 /obj/machinery/telecomms/processor/preset_cent
-	id = "CentComm Processor"
+	id = "CentCom Processor"
 	network = "tcommsat"
 	produces_heat = 0
 	autolinkers = list("processorCent")
@@ -199,11 +199,11 @@
 	freq_listening = list(SEC_FREQ)
 	autolinkers = list("security")
 
-/obj/machinery/telecomms/server/presets/centcomm
-	id = "CentComm Server"
+/obj/machinery/telecomms/server/presets/CentCom
+	id = "CentCom Server"
 	freq_listening = list(ERT_FREQ, DTH_FREQ)
 	produces_heat = 0
-	autolinkers = list("centcomm")
+	autolinkers = list("CentCom")
 
 
 //Broadcasters
@@ -216,7 +216,7 @@
 	autolinkers = list("broadcasterA")
 
 /obj/machinery/telecomms/broadcaster/preset_cent
-	id = "CentComm Broadcaster"
+	id = "CentCom Broadcaster"
 	network = "tcommsat"
 	produces_heat = 0
 	autolinkers = list("broadcasterCent")

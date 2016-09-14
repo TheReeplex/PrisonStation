@@ -52,8 +52,8 @@
 	name = "internal affairs rubber stamp"
 	icon_state = "stamp-intaff"
 
-/obj/item/weapon/stamp/centcomm
-	name = "centcomm rubber stamp"
+/obj/item/weapon/stamp/CentCom
+	name = "CentCom rubber stamp"
 	icon_state = "stamp-cent"
 
 /obj/item/weapon/stamp/qm

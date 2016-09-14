@@ -22,8 +22,8 @@
 
 
 /datum/file/program/communications
-	name = "Centcom communications relay"
-	desc = "Used to connect to Centcom."
+	name = "CentCom communications relay"
+	desc = "Used to connect to CentCom."
 	active_state = "comm"
 	req_access = list(access_heads)
 
@@ -184,7 +184,7 @@
 			stat_msg2 = reject_bad_text(sanitize(input("Line 2", "Enter Message Text", stat_msg2) as text|null, 40), 40)
 			computer.updateDialog()
 
-		// OMG CENTCOMM LETTERHEAD
+		// OMG CentCom LETTERHEAD
 		if("MessageCentcomm" in href_list)
 			if(!computer.radio.subspace)
 				return
