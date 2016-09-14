@@ -86,7 +86,7 @@
 
 /obj/item/clothing/accessory/poncho/roles/security
 	name = "security poncho"
-	desc = "A simple, comfortable cloak without sleeves. This one is black and red, standard NanoTrasen Security colors."
+	desc = "A simple, comfortable cloak without sleeves. This one is black and red, standard OmniWatch Security colors."
 	icon_state = "secponcho"
 	item_state = "secponcho"
 
@@ -104,7 +104,7 @@
 
 /obj/item/clothing/accessory/poncho/roles/science
 	name = "science poncho"
-	desc = "A simple, comfortable cloak without sleeves. This one is white with purple trim, standard NanoTrasen Science colors."
+	desc = "A simple, comfortable cloak without sleeves. This one is white with purple trim, standard OmniWatch Science colors."
 	icon_state = "sciponcho"
 	item_state = "sciponcho"
 

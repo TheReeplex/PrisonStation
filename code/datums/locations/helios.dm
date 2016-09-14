@@ -1,12 +1,12 @@
-//Prison Station
+//Helios
 
-// Prison Station TODO: Redo all this in accordance to new lore.
+// Prison Station TODO
 
-/datum/locations/vir
-	name = "Vir"
-	desc = "Vir is a human system that sits between the inner and outer systems of human-controlled space."
+/datum/locations/helios
+	name = "Helios"
+	desc = "Helios is a human system that resides just beyond the far fringes of human-controlled space."
 
-/datum/locations/vir/New(var/creator)
+/datum/locations/helios/New(var/creator)
 	contents.Add(
 		new /datum/locations/firnir(src),
 		new /datum/locations/tyr(src),
@@ -38,32 +38,33 @@
 	name = "Magni"
 	desc = "Outside of the habitable zone, Vir D is generally at 202 kelvin (-71°C)."
 
-/datum/locations/kara
-	name = "Kara"
-	desc = "A gas giant, with a large number of moons.  Captured asteroids, to be specific.  Many of these asteroids are being used by different companies for \
-	various purposes.  The temperature of the gas giant is 150 kelvin (-108°C)"
+/datum/locations/hades
+	name = "Hades"
+	desc = "An uninhabitable world cracked by a massive planetary collision eons ago, leaving the planet's core exposed. The entire system is littered \
+	with debris rich in minerals, making it a wealthy mining location. The OmniWatch owned Tartarus Penal Colony resides in this hazardous system where only \
+	the most foolhardy pilots would dare to travel outside of heavily patrolled transit lanes."
 
-/datum/locations/kara/New(var/creator)
+/datum/locations/hades/New(var/creator)
 	contents.Add(
-		new /datum/locations/northern_star(src)
+		new /datum/locations/tartarus(src)
 		)
 	..(creator)
 
-/datum/locations/northern_star //Inception joke here
-	name = "Northern Star"
-	desc = "The Northern Star is an asteroid colony owned and operated by NanoTrasen, among many other asteroid installations. \
-	Originally conceived as 'just another pitstop' for weary asteroid miners, it has grown to become a significant installation in the Kara subsystem."
+/datum/locations/tartarus //Inception joke here
+	name = "Tartarus Penal Colony"
+	desc = "The Tartarus is an asteroid-based penal colony owned and operated by OmniWatch Security Services. Originally conceived as 'just another pitstop' \
+	for weary asteroid miners, the colony has been refurbished to house some of the galaxy's most notorious criminals; for a price."
 
-/datum/locations/northern_star/New(var/creator)
+/datum/locations/tartarus/New(var/creator)
 	contents.Add(
-		new /datum/locations/northern_star_interior(src)
+		new /datum/locations/tartarus_interior(src)
 		)
 	..(creator)
 
-/datum/locations/northern_star_interior
-	name = "Northern Star Inner Level"
-	desc = "The Northern Star contains multiple layers, this one being the inner level, also known as the residentual area.  It contains most of the \
-	homes for the Northern Star, as well as acting as the heart of commerece, with many shops and markets near the center."
+/datum/locations/tartarus_interior
+	name = "Tartarus Penal Colony Main Level"
+	desc = "The Tartarus Penal Colony contains multiple layers, this one being the main level. It hosts both staff and prisoner facilities, divided up into \
+	two different sectors, so as to provide staff a safe work environment, whilst still allowing suitable observation and management of prisoners interned here."
 
 /datum/locations/rota
 	name = "Rota"

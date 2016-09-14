@@ -46,7 +46,8 @@ var/global/list/faction_choices = list(
 	"Grayson Manufactories Ltd.",
 	"Aether Atmospherics",
 	"Zeng-Hu Pharmaceuticals",
-	"Hesphaistos Industries"
+	"Hesphaistos Industries",
+	"OmniWatch"
 	)
 
 var/global/list/antag_faction_choices = list()	//Should be populated after brainstorming. Leaving as blank in case brainstorming does not occur.
