@@ -52,7 +52,7 @@
 
 /datum/locations/tartarus //Inception joke here
 	name = "Tartarus Penal Colony"
-	desc = "The Tartarus is an asteroid-based penal colony owned and operated by OmniWatch Security Services. Originally conceived as 'just another pitstop' \
+	desc = "The Tartarus is an asteroid-based penal colony owned and operated by OmniWatch Security Solutions. Originally conceived as 'just another pitstop' \
 	for weary asteroid miners, the colony has been refurbished to house some of the galaxy's most notorious criminals; for a price."
 
 /datum/locations/tartarus/New(var/creator)
