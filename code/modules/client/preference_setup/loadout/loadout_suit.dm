@@ -34,17 +34,17 @@
 	display_name = "leather jacket 2, black"
 	path = /obj/item/clothing/suit/storage/leather_jacket/alt
 
-/datum/gear/suit/leather_jacket_nt
+/datum/gear/suit/leather_jacket_omni
 	display_name = "leather jacket, corporate, black"
-	path = /obj/item/clothing/suit/storage/leather_jacket/nanotrasen
+	path = /obj/item/clothing/suit/storage/leather_jacket/omniwatch
 
 /datum/gear/suit/brown_jacket
 	display_name = "leather jacket, brown"
 	path = /obj/item/clothing/suit/storage/toggle/brown_jacket
 
-/datum/gear/suit/brown_jacket_nt
+/datum/gear/suit/brown_jacket_omni
 	display_name = "leather jacket, corporate, brown"
-	path = /obj/item/clothing/suit/storage/toggle/brown_jacket/nanotrasen
+	path = /obj/item/clothing/suit/storage/toggle/brown_jacket/omniwatch
 
 /datum/gear/suit/mil
 	display_name = "military jacket"

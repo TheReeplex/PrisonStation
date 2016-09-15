@@ -172,7 +172,7 @@
 			stat_msg2 = reject_bad_text(sanitize(input("Line 2", "Enter Message Text", stat_msg2) as text|null, 40), 40)
 			src.updateDialog()
 
-		// OMG CENTCOMM LETTERHEAD
+		// OMG CentCom LETTERHEAD
 		if("MessageCentcomm")
 			if(src.authenticated==2)
 				if(centcomm_message_cooldown)
@@ -508,7 +508,7 @@
 	if((ticker.mode.name == "blob")||(ticker.mode.name == "Meteor"))
 		return
 
-	if(!emergency_shuttle.going_to_centcom()) //check that shuttle isn't already heading to centcomm
+	if(!emergency_shuttle.going_to_centcom()) //check that shuttle isn't already heading to CentCom
 		emergency_shuttle.recall()
 		log_game("[key_name(user)] has recalled the shuttle.")
 		message_admins("[key_name_admin(user)] has recalled the shuttle.", 1)

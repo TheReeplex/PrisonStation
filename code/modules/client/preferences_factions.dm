@@ -4,6 +4,8 @@ var/global/list/seen_factions = list()
 var/global/list/seen_antag_factions = list()
 var/global/list/seen_religions = list()
 
+// Prison Station TODO
+
 //Commenting this out for now until I work the lists it into the event generator/journalist/chaplain.
 /proc/UpdateFactionList(mob/living/carbon/human/M)
 	/*if(M && M.client && M.client.prefs)
@@ -28,7 +30,9 @@ var/global/list/home_system_choices = list(
 	"Tau Ceti",
 	"Qerr'Vallis",
 	"Epsilon Ursae Minoris",
-	"Rarkajar"
+	"Rarkajar",
+	"Virgo-Erigone", // Hurr Vorestation reference.
+	"Helios",
 	)
 
 var/global/list/faction_choices = list(
@@ -42,7 +46,8 @@ var/global/list/faction_choices = list(
 	"Grayson Manufactories Ltd.",
 	"Aether Atmospherics",
 	"Zeng-Hu Pharmaceuticals",
-	"Hesphaistos Industries"
+	"Hesphaistos Industries",
+	"OmniWatch"
 	)
 
 var/global/list/antag_faction_choices = list()	//Should be populated after brainstorming. Leaving as blank in case brainstorming does not occur.

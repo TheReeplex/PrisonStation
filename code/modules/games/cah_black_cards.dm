@@ -21,7 +21,7 @@
 	"No one else was at _______, they wouldn't understand the ______",
 	"Why am I shivering?",
 	"What is this world coming to? First, ________, now _______",
-	"NanoTrasen's labor union decided to use _______ to raise employee morale.",
+	"OmniWatch's labor union decided to use _______ to raise employee morale.",
 	"The Chemist's drug of choice is ______",
 	"It is common practice for _______ to ______ on Moghes.",
 	"Mercurial Colonies are _____.",

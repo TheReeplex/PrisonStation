@@ -56,7 +56,7 @@
 										/datum/species/diona 	= 7
 											)
 
-//---- The following corporations are friendly with NanoTrasen and loosely enable trade and travel:
+//---- The following corporations are friendly with OmniWatch and loosely enable trade and travel:
 //Corporation NanoTrasen - Generalised / high tech research and phoron exploitation.
 //Corporation Vessel Contracting - Ship and station construction, materials research.
 //Corporation Osiris Atmospherics - Atmospherics machinery construction and chemical research.

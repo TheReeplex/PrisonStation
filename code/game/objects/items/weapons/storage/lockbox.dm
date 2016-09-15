@@ -96,7 +96,7 @@
 
 /obj/item/weapon/storage/lockbox/medal
 	name = "lockbox of medals"
-	desc = "A lockbox filled with commemorative medals, it has the NanoTrasen logo stamped on it."
+	desc = "A lockbox filled with commemorative medals, it has the OmniWatch logo stamped on it."
 	req_access = list(access_heads)
 	storage_slots = 7
 

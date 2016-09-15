@@ -317,7 +317,7 @@
 	icon_state = "leather_jacket_alt"
 	item_state_slots = list(slot_r_hand_str = "leather_jacket", slot_l_hand_str = "leather_jacket")
 
-/obj/item/clothing/suit/storage/leather_jacket/nanotrasen
+/obj/item/clothing/suit/storage/leather_jacket/omniwatch
 	desc = "A black leather coat. A corporate logo is proudly displayed on the back."
 	icon_state = "leather_jacket_nt"
 	item_state_slots = list(slot_r_hand_str = "leather_jacket", slot_l_hand_str = "leather_jacket")
@@ -332,7 +332,7 @@
 	icon_closed = "brown_jacket"
 	body_parts_covered = UPPER_TORSO|ARMS
 
-/obj/item/clothing/suit/storage/toggle/brown_jacket/nanotrasen
+/obj/item/clothing/suit/storage/toggle/brown_jacket/omniwatch
 	desc = "A brown leather coat. A corporate logo is proudly displayed on the back."
 	icon_state = "brown_jacket_nt"
 	item_state_slots = list(slot_r_hand_str = "brown_jacket", slot_l_hand_str = "brown_jacket")
@@ -415,7 +415,7 @@
 
 /obj/item/clothing/suit/storage/toggle/hoodie/nt
 	name = "NT hoodie"
-	desc = "A warm, blue sweatshirt.  It proudly bears the silver NanoTrasen insignia lettering on the back.  The edges are trimmed with silver."
+	desc = "A warm, blue sweatshirt.  It proudly bears the OmniWatch insignia lettering on the back.  The edges are trimmed with silver."
 	icon_state = "nt_hoodie"
 	item_state_slots = list(slot_r_hand_str = "suit_blue", slot_l_hand_str = "suit_blue")
 	icon_open = "nt_hoodie_open"

@@ -416,8 +416,8 @@
 		"marisa wizard",
 		"emergency response team",
 		"nanotrasen representative",
-		"nanotrasen officer",
-		"nanotrasen captain"
+		"omniwatch officer",
+		"omniwatch captain"
 		)
 	var/dresscode = input("Select dress for [M]", "Robust quick dress shop") as null|anything in dresspacks
 	if (isnull(dresscode))
@@ -642,7 +642,7 @@
 			W.registered_name = M.real_name
 			M.equip_to_slot_or_del(W, slot_wear_id)
 
-		if("nanotrasen officer")
+		if("omniwatch officer")
 			M.equip_to_slot_or_del(new /obj/item/clothing/under/rank/centcom_officer(M), slot_w_uniform)
 			M.equip_to_slot_or_del(new /obj/item/clothing/shoes/laceup(M), slot_shoes)
 			M.equip_to_slot_or_del(new /obj/item/clothing/gloves/white(M), slot_gloves)
@@ -651,7 +651,7 @@
 
 			var/obj/item/device/pda/heads/pda = new(M)
 			pda.owner = M.real_name
-			pda.ownjob = "NanoTrasen Navy Officer"
+			pda.ownjob = "OmniWatch Navy Officer"
 			pda.name = "PDA-[M.real_name] ([pda.ownjob])"
 
 			M.equip_to_slot_or_del(pda, slot_r_store)
@@ -662,12 +662,12 @@
 			W.name = "[M.real_name]'s ID Card"
 			W.access = get_all_station_access()
 			W.access += get_all_centcom_access()
-			W.assignment = "NanoTrasen Navy Officer"
+			W.assignment = "OmniWatch Navy Officer"
 			W.registered_name = M.real_name
 			M.equip_to_slot_or_del(W, slot_wear_id)
 
 
-		if("nanotrasen captain")
+		if("omniwatch captain")
 			M.equip_to_slot_or_del(new /obj/item/clothing/under/rank/centcom_captain(M), slot_w_uniform)
 			M.equip_to_slot_or_del(new /obj/item/clothing/shoes/laceup(M), slot_shoes)
 			M.equip_to_slot_or_del(new /obj/item/clothing/gloves/white(M), slot_gloves)
@@ -676,7 +676,7 @@
 
 			var/obj/item/device/pda/heads/pda = new(M)
 			pda.owner = M.real_name
-			pda.ownjob = "NanoTrasen Navy Captain"
+			pda.ownjob = "OmniWatch Navy Captain"
 			pda.name = "PDA-[M.real_name] ([pda.ownjob])"
 
 			M.equip_to_slot_or_del(pda, slot_r_store)
@@ -687,7 +687,7 @@
 			W.name = "[M.real_name]'s ID Card"
 			W.access = get_all_station_access()
 			W.access += get_all_centcom_access()
-			W.assignment = "NanoTrasen Navy Captain"
+			W.assignment = "OmniWatch Navy Captain"
 			W.registered_name = M.real_name
 			M.equip_to_slot_or_del(W, slot_wear_id)
 
