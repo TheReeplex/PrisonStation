@@ -1,19 +1,19 @@
 /obj/item/clothing/gloves/captain
+	name = "\improper Prison Administrator's gloves"
 	desc = "Regal blue gloves, with a nice gold trim. Swanky."
-	name = "station administrator's gloves"
 	icon_state = "captain"
 	item_state_slots = list(slot_r_hand_str = "blue", slot_l_hand_str = "blue")
 
 /obj/item/clothing/gloves/cyborg
-	desc = "beep boop borp"
 	name = "cyborg gloves"
+	desc = "beep boop borp"
 	icon_state = "black"
 	item_state = "r_hands"
 	siemens_coefficient = 1.0
 
 /obj/item/clothing/gloves/swat
-	desc = "These tactical gloves are somewhat fire and impact-resistant."
 	name = "\improper SWAT Gloves"
+	desc = "These tactical gloves are somewhat fire and impact-resistant."
 	icon_state = "black"
 	item_state = "swat"
 	siemens_coefficient = 0.50
@@ -24,8 +24,8 @@
 	max_heat_protection_temperature = GLOVES_MAX_HEAT_PROTECTION_TEMPERATURE
 
 /obj/item/clothing/gloves/combat //Combined effect of SWAT gloves and insulated gloves
-	desc = "These tactical gloves are somewhat fire and impact resistant."
 	name = "combat gloves"
+	desc = "These tactical gloves are somewhat fire and impact resistant."
 	icon_state = "black"
 	item_state = "swat"
 	siemens_coefficient = 0
@@ -43,10 +43,10 @@
 	siemens_coefficient = 1.0 //thin latex gloves, much more conductive than fabric gloves (basically a capacitor for AC)
 	permeability_coefficient = 0.01
 	germ_level = 0
-	
+
 /obj/item/clothing/gloves/botanic_leather
-	desc = "These leather work gloves protect against thorns, barbs, prickles, spikes and other harmful objects of floral origin."
 	name = "botanist's leather gloves"
+	desc = "These leather work gloves protect against thorns, barbs, prickles, spikes and other harmful objects of floral origin."
 	icon_state = "leather"
 	item_state_slots = list(slot_r_hand_str = "lightbrown", slot_l_hand_str = "lightbrown")
 	permeability_coefficient = 0.05

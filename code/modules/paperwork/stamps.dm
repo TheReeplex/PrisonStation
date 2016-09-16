@@ -13,7 +13,7 @@
 	attack_verb = list("stamped")
 
 /obj/item/weapon/stamp/captain
-	name = "station administrator's rubber stamp"
+	name = "/improper Prison Administrator's rubber stamp"
 	icon_state = "stamp-cap"
 
 /obj/item/weapon/stamp/hop

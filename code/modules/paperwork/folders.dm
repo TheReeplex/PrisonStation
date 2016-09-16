@@ -23,7 +23,7 @@
 	icon_state = "folder_white"
 
 /obj/item/weapon/folder/blue_captain
-	desc = "A blue folder with Station Administrator markings."
+	desc = "A blue folder with Prison Administrator markings."
 	icon_state = "folder_captain"
 
 /obj/item/weapon/folder/blue_hop

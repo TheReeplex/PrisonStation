@@ -153,7 +153,7 @@
 	rolled_sleeves = 0
 
 /obj/item/clothing/under/gimmick/rank/captain/suit
-	name = "station administrator's suit"
+	name = "/improper Prison Administrator's suit"
 	desc = "A green suit and yellow necktie. Exemplifies authority."
 	icon_state = "green_suit"
 	item_state_slots = list(slot_r_hand_str = "centcom", slot_l_hand_str = "centcom")
@@ -316,8 +316,8 @@
 	item_state_slots = list(slot_r_hand_str = "dress_white", slot_l_hand_str = "dress_white")
 
 /obj/item/clothing/under/dress/dress_cap
-	name = "station administrator's dress uniform"
-	desc = "Feminine fashion for the style concious Station Administrator."
+	name = "/improper Prison Administrator's dress uniform"
+	desc = "Feminine fashion for the style concious Prison Administrator."
 	icon_state = "dress_cap"
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|ARMS
 
@@ -383,8 +383,8 @@
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO
 
 /obj/item/clothing/under/captainformal
-	name = "station administrator's formal uniform"
-	desc = "A Station Administrator's formal-wear, for special occasions."
+	name = "/improper Prison Administrator's formal uniform"
+	desc = "A Prison Administrator's formal-wear, for special occasions."
 	icon_state = "captain_formal"
 	item_state_slots = list(slot_r_hand_str = "lawyer_blue", slot_l_hand_str = "lawyer_blue")
 
