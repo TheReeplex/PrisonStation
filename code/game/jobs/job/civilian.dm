@@ -1,4 +1,5 @@
 //Food
+/*
 /datum/job/bartender
 	title = "Bartender"
 	flag = BARTENDER
@@ -26,7 +27,7 @@
 		H.equip_to_slot_or_del(new /obj/item/clothing/under/rank/bartender(H), slot_w_uniform)
 		H.equip_to_slot_or_del(new /obj/item/device/pda/bar(H), slot_belt)
 		return 1
-
+*/
 
 
 /datum/job/chef
@@ -147,7 +148,7 @@
 		return 1
 
 
-
+/* // We're recruiting prisoners to mine.
 /datum/job/mining
 	title = "Shaft Miner"
 	flag = MINER
@@ -187,6 +188,7 @@
 		if(!H)	return 0
 		H.species.equip_survival_gear(H,1)
 		return 1
+*/
 
 /datum/job/janitor
 	title = "Janitor"
@@ -221,14 +223,14 @@
 	department = "Civilian"
 	department_flag = CIVILIAN
 	faction = "Station"
-	total_positions = 1
-	spawn_positions = 1
+	total_positions = 3
+	spawn_positions = 3
 	supervisors = "the head of personnel"
 	selection_color = "#515151"
 	idtype = /obj/item/weapon/card/id/civilian
 	access = list(access_library, access_maint_tunnels)
 	minimal_access = list(access_library)
-	alt_titles = list("Journalist", "Professor", "Historian")
+	alt_titles = list("Tutor", "Journalist", "Professor", "Historian")
 
 
 	equip(var/mob/living/carbon/human/H)

@@ -1,9 +1,9 @@
 /datum/job/inmate
 	title = "Inmate"
 	flag = INMATE
-	department = "Inmate"
-	department_flag = CIVILIAN
-	faction = "Inmate"
+	department = "Prisoner"
+	department_flag = INMATE
+	faction = "Prisoner"
 	total_positions = -1
 	spawn_positions = -1
 	supervisors = "absolutely everyone"
