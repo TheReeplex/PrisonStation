@@ -163,15 +163,17 @@
 			H.equip_to_slot_or_del(new /obj/item/weapon/handcuffs(H), slot_in_backpack)
 		return 1
 
+
+
 /datum/job/prison_officer // Not Done
 	title = "Correctional Officer"
-	flag = C_OFFICER
+	flag = COFFICER
 	department = "Security"
 	department_flag = ENGSEC
 	faction = "Station"
 	total_positions = 4
 	spawn_positions = 4
-	supervisors = "the Warden"
+	supervisors = "the Warden, and the Head of Security"
 	selection_color = "#601C1C"
 	idtype = /obj/item/weapon/card/id/security
 	alt_titles = list("Junior Correctional Officer")
@@ -198,6 +200,8 @@
 			H.equip_to_slot_or_del(new /obj/item/weapon/handcuffs(H), slot_in_backpack)
 		return 1
 
+
+
 /datum/job/swat // Not Done, possibly nees a name change.
 	title = "Crisis Response Officer"
 	flag = SWAT
@@ -206,7 +210,7 @@
 	faction = "Station"
 	total_positions = 4
 	spawn_positions = 4
-	supervisors = "the Warden"
+	supervisors = "the Warden, and the Head of Security"
 	selection_color = "#601C1C"
 	idtype = /obj/item/weapon/card/id/security
 	alt_titles = list("S.W.A.T.") // Too edgy? -Spades

@@ -204,7 +204,8 @@ var/world_topic_spam_protect_time = world.timeofday
 				"sci" = science_positions,
 				"car" = cargo_positions,
 				"civ" = civilian_positions,
-				"bot" = nonhuman_positions
+				"bot" = nonhuman_positions,
+				"pri" = prisoner_positions
 			)
 
 		for(var/datum/data/record/t in data_core.general)

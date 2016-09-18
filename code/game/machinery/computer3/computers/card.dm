@@ -84,6 +84,15 @@
 				counter = 0
 			jobs_all += "<td weight='100'><a href='?src=\ref[src];assign=[job]'>[replacetext(job, " ", "&nbsp")]</a></td>"
 
+		counter = 0
+		jobs_all += "</tr><tr height='20'><td><font color='#FF6600'><b>Prisoner</b></font></td>"//Grey
+		for(var/job in prisoner_positions)
+			counter++
+			if(counter >= 6)
+				jobs_all += "</tr><tr height='20'><td></td><td></td>"
+				counter = 0
+			jobs_all += "<td weight='100'><a href='?src=\ref[src];assign=[job]'>[replacetext(job, " ", "&nbsp")]</a></td>"
+
 			dat = {"<script type="text/javascript">
 								function markRed(){
 									var nameField = document.getElementById('namefield');

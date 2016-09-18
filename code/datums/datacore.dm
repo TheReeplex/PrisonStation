@@ -20,6 +20,7 @@
 	var/list/sci = new()
 	var/list/car = new()
 	var/list/civ = new()
+	var/list/pri = new()
 	var/list/bot = new()
 	var/list/misc = new()
 	var/list/isactive = new()
@@ -74,6 +75,9 @@
 			department = 1
 		if(real_rank in civilian_positions)
 			civ[name] = rank
+			department = 1
+		if(real_rank in prisoner_positions)
+			pri[name] = rank
 			department = 1
 		if(!department && !(name in heads))
 			misc[name] = rank

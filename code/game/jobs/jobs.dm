@@ -6,13 +6,13 @@ var/const/HOS				=(1<<1)
 var/const/WARDEN			=(1<<2)
 var/const/DETECTIVE			=(1<<3)
 var/const/OFFICER			=(1<<4)
-var/const/C_OFFICER			=(1<<6)
-var/const/SWAT				=(1<<3)
 var/const/CHIEF				=(1<<5)
 var/const/ENGINEER			=(1<<6)
 var/const/ATMOSTECH			=(1<<7)
 var/const/AI				=(1<<8)
 var/const/CYBORG			=(1<<9)
+var/const/COFFICER			=(1<<10)
+var/const/SWAT				=(1<<11)
 
 
 var/const/MEDSCI			=(1<<1)
@@ -34,23 +34,25 @@ var/const/CIVILIAN			=(1<<2)
 
 var/const/HOP				=(1<<0)
 var/const/BARTENDER			=(1<<1)
-var/const/BOTANIST			=(1<<2)
-var/const/CHEF				=(1<<3)
-var/const/JANITOR			=(1<<4)
-var/const/LIBRARIAN			=(1<<5)
-var/const/QUARTERMASTER		=(1<<6)
-var/const/CARGOTECH			=(1<<7)
-var/const/MINER				=(1<<8)
-var/const/LAWYER			=(1<<9)
-var/const/CHAPLAIN			=(1<<10)
-var/const/CLOWN				=(1<<11)
-var/const/MIME				=(1<<12)
-var/const/INMATE			=(1<<13)
+var/const/CHEF				=(1<<2)
+var/const/LIBRARIAN			=(1<<3)
+var/const/QUARTERMASTER		=(1<<4)
+var/const/JANITOR			=(1<<5)
+var/const/CARGOTECH			=(1<<6)
+var/const/LAWYER			=(1<<7)
+var/const/CHAPLAIN			=(1<<8)
+var/const/CLOWN				=(1<<9)
+var/const/MIME				=(1<<10)
+var/const/MFOREMAN			=(1<<11)
+var/const/FFOREMAN			=(1<<12)
 
+var/const/PRISONER			=(1<<3)
 
-var/list/inmate_occupations = list(
-)
-
+var/const/INMATE			=(1<<1)
+var/const/MINER				=(1<<2)
+var/const/BOTANIST			=(1<<3)
+var/const/WORKER			=(1<<4)
+var/const/PCHEF				=(1<<6)
 
 var/list/command_positions = list(
 	"Prison Administrator",
@@ -90,20 +92,20 @@ var/list/science_positions = list(
 //BS12 EDIT
 var/list/cargo_positions = list(
 	"Quartermaster",
-	"Cargo Technician",
-	"Shaft Miner"
+	"Cargo Technician"
 )
 
 var/list/civilian_positions = list(
 	"Head of Personnel",
 	"Bartender",
-	"Gardener",
 	"Chef",
-	"Janitor",
 	"Librarian",
 	"Lawyer",
 	"Chaplain",
-	"Inmate"
+	"Janitor",
+	"Kitchen Foreman",
+	"Production Foreman",
+	"Shaft Mine Foreman"
 )
 
 
@@ -111,7 +113,17 @@ var/list/security_positions = list(
 	"Head of Security",
 	"Warden",
 	"Detective",
-	"Security Officer"
+	"Security Officer",
+	"Crisis Response Officer",
+	"Correctional Officer"
+)
+
+// Prison Station Edit
+var/list/prisoner_positions = list(
+	"Inmate",
+	"Food Processing Laborer",
+	"Factory Worker",
+	"Shaft Mine Laborer"
 )
 
 
@@ -120,7 +132,6 @@ var/list/nonhuman_positions = list(
 	"Cyborg",
 	"pAI"
 )
-
 
 /proc/guest_jobbans(var/job)
 	return ((job in command_positions) || (job in nonhuman_positions) || (job in security_positions))

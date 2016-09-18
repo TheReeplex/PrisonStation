@@ -73,6 +73,7 @@ var/global/list/PDA_Manifest = list()
 	var/sci[0]
 	var/car[0]
 	var/civ[0]
+	var/pri[0]
 	var/bot[0]
 	var/misc[0]
 	for(var/datum/data/record/t in data_core.general)
@@ -125,6 +126,12 @@ var/global/list/PDA_Manifest = list()
 			department = 1
 			if(depthead && civ.len != 1)
 				civ.Swap(1,civ.len)
+
+		if(real_rank in prisoner_positions)
+			pri[++pri.len] = list("name" = name, "rank" = rank, "active" = isactive)
+			department = 1
+			if(depthead && pri.len != 1)
+				pri.Swap(1,pri.len)
 
 		if(real_rank in nonhuman_positions)
 			bot[++bot.len] = list("name" = name, "rank" = rank, "active" = isactive)
