@@ -1,7 +1,7 @@
 var/datum/announcement/minor/captain_announcement = new(do_newscast = 1)
 
 /datum/job/captain
-	title = "Station Administrator"
+	title = "Prison Administrator"
 	flag = CAPTAIN
 	department = "Command"
 	head_position = 1
@@ -69,10 +69,9 @@ var/datum/announcement/minor/captain_announcement = new(do_newscast = 1)
 	faction = "Station"
 	total_positions = 1
 	spawn_positions = 1
-	supervisors = "the station administrator"
+	supervisors = "the Prison Administrator"
 	selection_color = "#2F2F7F"
 	idtype = /obj/item/weapon/card/id/silver
-	alt_titles = list("Crew Resources Officer")
 	req_admin_notify = 1
 	minimal_player_age = 10
 	economic_modifier = 10
