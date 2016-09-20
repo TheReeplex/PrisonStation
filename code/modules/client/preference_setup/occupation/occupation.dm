@@ -1,6 +1,6 @@
 //used for pref.alternate_option
 #define GET_RANDOM_JOB 0
-#define BE_ASSISTANT 1
+#define BE_INMATE 1
 #define RETURN_TO_LOBBY 2
 
 /datum/category_item/player_setup_item/occupation
@@ -93,7 +93,7 @@
 		if(job.minimum_character_age && user.client && (user.client.prefs.age < job.minimum_character_age))
 			. += "<del>[rank]</del></td><td> \[MINIMUM CHARACTER AGE: [job.minimum_character_age]]</td></tr>"
 			continue
-		if((pref.job_civilian_low & ASSISTANT) && (rank != "Assistant"))
+		if((pref.job_civilian_low & INMATE) && (rank != "Inmate"))
 			. += "<font color=grey>[rank]</font></td><td></td></tr>"
 			continue
 		if((rank in command_positions) || (rank == "AI"))//Bold head jobs
@@ -105,8 +105,8 @@
 
 		. += "<a href='?src=\ref[src];set_job=[rank]'>"
 
-		if(rank == "Assistant")//Assistant is special
-			if(pref.job_civilian_low & ASSISTANT)
+		if(rank == "Inmate")//Inmate is special
+			if(pref.job_civilian_low & INMATE)
 				. += " <font color=55cc55>\[Yes]</font>"
 			else
 				. += " <font color=black>\[No]</font>"
@@ -132,8 +132,8 @@
 	switch(pref.alternate_option)
 		if(GET_RANDOM_JOB)
 			. += "<u><a href='?src=\ref[src];job_alternative=1'>Get random job if preferences unavailable</a></u>"
-		if(BE_ASSISTANT)
-			. += "<u><a href='?src=\ref[src];job_alternative=1'>Be assistant if preference unavailable</a></u>"
+		if(BE_INMATE)
+			. += "<u><a href='?src=\ref[src];job_alternative=1'>Be inmate if preference unavailable</a></u>"
 		if(RETURN_TO_LOBBY)
 			. += "<u><a href='?src=\ref[src];job_alternative=1'>Return to lobby if preference unavailable</a></u>"
 
@@ -147,7 +147,7 @@
 		return TOPIC_REFRESH
 
 	else if(href_list["job_alternative"])
-		if(pref.alternate_option == GET_RANDOM_JOB || pref.alternate_option == BE_ASSISTANT)
+		if(pref.alternate_option == GET_RANDOM_JOB || pref.alternate_option == BE_INMATE)
 			pref.alternate_option += 1
 		else if(pref.alternate_option == RETURN_TO_LOBBY)
 			pref.alternate_option = 0
@@ -179,7 +179,7 @@
 	if(!job)
 		return 0
 
-	if(role == "Assistant")
+	if(role == "Inmate")
 		if(pref.job_civilian_low & job.flag)
 			pref.job_civilian_low &= ~job.flag
 		else

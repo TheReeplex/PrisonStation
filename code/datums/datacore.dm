@@ -20,6 +20,7 @@
 	var/list/sci = new()
 	var/list/car = new()
 	var/list/civ = new()
+	var/list/pri = new()
 	var/list/bot = new()
 	var/list/misc = new()
 	var/list/isactive = new()
@@ -74,6 +75,9 @@
 			department = 1
 		if(real_rank in civilian_positions)
 			civ[name] = rank
+			department = 1
+		if(real_rank in prisoner_positions)
+			pri[name] = rank
 			department = 1
 		if(!department && !(name in heads))
 			misc[name] = rank
@@ -361,7 +365,7 @@
 			clothes_s = new /icon('icons/mob/uniform.dmi', "virologywhite_s")
 			clothes_s.Blend(new /icon('icons/mob/feet.dmi', "white"), ICON_UNDERLAY)
 			clothes_s.Blend(new /icon('icons/mob/suit.dmi', "labcoat_vir_open"), ICON_OVERLAY)
-		if("Station Administrator")
+		if("Prison Administrator")
 			clothes_s = new /icon('icons/mob/uniform.dmi', "captain_s")
 			clothes_s.Blend(new /icon('icons/mob/feet.dmi', "brown"), ICON_UNDERLAY)
 		if("Head of Security")

@@ -51,11 +51,13 @@
 					B.name = "Uplifting Primer"
 				if("toolboxia")
 					B.name = "Toolbox Manifesto"
+				/*
 				if("homosexuality")
 					B.name = "Guys Gone Wild"
-				//if("lol", "wtf", "gay", "penis", "ass", "poo", "badmin", "shitmin", "deadmin", "cock", "cocks")
-				//	B.name = pick("Woodys Got Wood: The Aftermath", "War of the Cocks", "Sweet Bro and Hella Jef: Expanded Edition")
-				//	H.setBrainLoss(100) // starts off retarded as fuck
+				if("lol", "wtf", "gay", "penis", "ass", "poo", "badmin", "shitmin", "deadmin", "cock", "cocks")
+					B.name = pick("Woodys Got Wood: The Aftermath", "War of the Cocks", "Sweet Bro and Hella Jef: Expanded Edition")
+					H.setBrainLoss(100) // starts off retarded as fuck
+				*/
 				if("science")
 					B.name = pick("Principle of Relativity", "Quantum Enigma: Physics Encounters Consciousness", "Programming the Universe", "Quantum Physics and Theology", "String Theory for Dummies", "How To: Build Your Own Warp Drive", "The Mysteries of Bluespace", "Playing God: Collector's Edition")
 				else
@@ -158,3 +160,9 @@
 
 /datum/job/chaplain/equip_preview(var/mob/living/carbon/human/H, var/alt_title)
 	return equip(H, alt_title, FALSE)
+
+/datum/job/chaplain/get_access()
+	if(config.assistant_maint)
+		return list(access_maint_tunnels)
+	else
+		return list()

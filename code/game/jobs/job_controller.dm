@@ -1,7 +1,7 @@
 var/global/datum/controller/occupations/job_master
 
 #define GET_RANDOM_JOB 0
-#define BE_ASSISTANT 1
+#define BE_INMATE 1
 #define RETURN_TO_LOBBY 2
 
 /datum/controller/occupations
@@ -108,7 +108,7 @@ var/global/datum/controller/occupations/job_master
 			if(job.minimum_character_age && (player.client.prefs.age < job.minimum_character_age))
 				continue
 
-			if(istype(job, GetJob("Assistant"))) // We don't want to give him assistant, that's boring!
+			if(istype(job, GetJob("Inmate"))) // We don't want to give him inmate, that's boring!
 				continue
 
 			if(job.title in command_positions) //If you want a command position, select it!
@@ -220,15 +220,15 @@ var/global/datum/controller/occupations/job_master
 
 		HandleFeedbackGathering()
 
-		//People who wants to be assistants, sure, go on.
-		Debug("DO, Running Assistant Check 1")
+		//People who wants to be inmates, sure, go on.
+		Debug("DO, Running Inmate Check 1")
 		var/datum/job/assist = new DEFAULT_JOB_TYPE ()
-		var/list/assistant_candidates = FindOccupationCandidates(assist, 3)
-		Debug("AC1, Candidates: [assistant_candidates.len]")
-		for(var/mob/new_player/player in assistant_candidates)
+		var/list/inmate_candidates = FindOccupationCandidates(assist, 3)
+		Debug("AC1, Candidates: [inmate_candidates.len]")
+		for(var/mob/new_player/player in inmate_candidates)
 			Debug("AC1 pass, Player: [player]")
-			AssignRole(player, "Assistant")
-			assistant_candidates -= player
+			AssignRole(player, "Inmate")
+			inmate_candidates -= player
 		Debug("DO, AC1 end")
 
 		//Select one head
@@ -304,11 +304,11 @@ var/global/datum/controller/occupations/job_master
 
 		Debug("DO, Running AC2")
 
-		// For those who wanted to be assistant if their preferences were filled, here you go.
+		// For those who wanted to be inmate if their preferences were filled, here you go.
 		for(var/mob/new_player/player in unassigned)
-			if(player.client.prefs.alternate_option == BE_ASSISTANT)
-				Debug("AC2 Assistant located, Player: [player]")
-				AssignRole(player, "Assistant")
+			if(player.client.prefs.alternate_option == BE_INMATE)
+				Debug("AC2 Inmate located, Player: [player]")
+				AssignRole(player, "Inmate")
 
 		//For ones returning to lobby
 		for(var/mob/new_player/player in unassigned)
@@ -429,9 +429,9 @@ var/global/datum/controller/occupations/job_master
 					return H.Robotize()
 				if("AI")
 					return H
-				if("Station Administrator")
+				if("Prison Administrator")
 					var/sound/announce_sound = (ticker.current_state <= GAME_STATE_SETTING_UP)? null : sound('sound/misc/boatswain.ogg', volume=20)
-					captain_announcement.Announce("All hands, [alt_title ? alt_title : "Station Administrator"] [H.real_name] on deck!", new_sound=announce_sound)
+					captain_announcement.Announce("All hands, [alt_title ? alt_title : "Prison Administrator"] [H.real_name] on deck!", new_sound=announce_sound)
 
 			//Deferred item spawning.
 			if(spawn_in_storage && spawn_in_storage.len)

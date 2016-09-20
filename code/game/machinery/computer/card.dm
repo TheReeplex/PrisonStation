@@ -104,6 +104,7 @@
 	data["science_jobs"] = format_jobs(science_positions)
 	data["security_jobs"] = format_jobs(security_positions)
 	data["civilian_jobs"] = format_jobs(civilian_positions)
+	data["prisoner_jobs"] = format_jobs(prisoner_positions)
 	data["centcom_jobs"] = format_jobs(get_all_centcom_jobs())
 
 	if (modify && is_centcom())

@@ -9,10 +9,20 @@
 	desc = "An armband, worn by the crew to display which department they're assigned to. This one is brown."
 	icon_state = "cargo"
 
+/obj/item/clothing/accessory/armband/mining
+	name = "mining armband"
+	desc = "An armband, worn by the crew to display which department they're assigned to. This one is brown."
+	icon_state = "cargo" // Prison Station TODO: New sprites.
+
 /obj/item/clothing/accessory/armband/engine
 	name = "engineering armband"
 	desc = "An armband, worn by the crew to display which department they're assigned to. This one is orange with a reflective strip!"
 	icon_state = "engie"
+
+/obj/item/clothing/accessory/armband/production
+	name = "factory worker armband"
+	desc = "An armband, worn by the crew to display which department they're assigned to. This one is orange with a reflective strip!"
+	icon_state = "engie" // Prison Station TODO: New sprites.
 
 /obj/item/clothing/accessory/armband/science
 	name = "science armband"
