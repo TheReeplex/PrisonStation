@@ -5,7 +5,7 @@
 	department_flag = PRISONER
 	faction = "Station" // Does this actually do anything?
 	total_positions = -1
-	spawn_positions = -1
+	spawn_positions = 20 // Change this if more cells get added.
 	supervisors = "absolutely everyone"
 	selection_color = "#FF6600"
 	economic_modifier = 1
